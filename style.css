@@ -1,68 +1,70 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: Helvetica, sans-serif;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #c4e0e5, #4ca1af);
+  height: 100vh;
+  width: 100%;
+  --border_color: #e7e7e7;
+}
+.container {
+  width: 400px;
+  height: 500px;
+  box-shadow: 1px 4px 5px 1px rgba(99, 96, 96, 0.91);
+  background-color: rgba(256, 256, 256, 0.7);
+  border-radius: 15px;
+}
+.screen {
+  background-color: rgb(41, 44, 48);
+  border-radius: 15px 15px 0 0;
+  height: 20%;
+  border: 10px solid var(--border_color);
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0 10px 10px 0;
+  color: #fff;
+  font-size: 3rem;
+  display: flex;
+}
+.button-container {
+  height: 80%;
+  border: 10px solid var(--border_color);
+  border-radius: 0 0 15px 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  padding: 10px;
+  gap: 5px;
+}
+.button {
+  border-radius: 15px;
+  font-size: 2rem;
+  border: 3px outset rgb(210, 197, 197);
+  transition: 500;
+  cursor: pointer;
+}
+.button:hover {
+  border: 3px inset rgb(210, 197, 197);
+  transform: scale(0.9);
+}
+.span-two {
+  grid-column: span 2;
+}
+
+
+@media(max-width:700px) {
+    .container{
+        width:300px;
+        height: 370px;
+    }
     
-
 }
-html{
-    font-size: 10px;
-    
-}
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    background: linear-gradient(to right, #C4E0E5, #4CA1AF);
-    height: 100vh;
-    width: 100%;
-    --border_color: #e7e7e7;
-
-}
-.container{
-    width: 400px;
-    height: 500px;
-    box-shadow: 1px 4px 5px 1px rgba(99,96,96,0.91);
-    background-color: rgba(256,256,256,0.7);
-    border-radius: 15px;
-  
-}
-.screen{
-    background-color:rgb(41, 44, 48);
-    border-radius: 15px 15px 0 0;
-    height:20% ;
-    border: 10px solid var(--border_color);
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding: 0 10px 10px 0;
-    color: #fff;
-    font-size: 3rem; 
-}
-.button-container{
-    height:80%;
-    border: 10px solid var(--border_color);
-    border-radius: 0 0 15px 15px;
-    display: grid;
-    grid-template-columns:repeat(4,1fr) ;
-    grid-template-rows: repeat(5,1fr);
-    padding: 10px;
-    gap: 5px;  
-}
-.button{
-    border-radius: 15px;
-    font-size: 2rem;
-    border: 3px outset rgb(210, 197, 197);
-    transition: 500;
-    cursor: pointer;
-}
-.button:hover{
-    border: 3px inset rgb(210, 197, 197);
-    transform: scale(.9);
-
-
-}
-.span-two{
-    grid-column: span 2;
-}
-
