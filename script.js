@@ -31,5 +31,7 @@ function readEquals() {
   let number = valueOnScreen.innerText;
   readAllClear();
   let result = eval(number);
-  displayOnScreen(result);
+  displayOnScreen(result.toFixed(8));
 }
+
+
