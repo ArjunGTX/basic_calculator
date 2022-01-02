@@ -10,6 +10,10 @@ Primitive calculator for basic arithmetic operations.
 6. Clear Screen
 7. Supports fractional values
 
+## Learning Outcomes
+1. CSS Grid
+2. Calculator Logic
+
 ## Tech Stack
 <ul>
 <li>HTML</li>
